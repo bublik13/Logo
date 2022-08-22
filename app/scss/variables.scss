@@ -1,0 +1,29 @@
+:root {
+  //fonts
+  --basic-family: 'Futura PT', "Arial", "Helvetica", sans-serif;
+
+  //color
+  --color-main: #ffffff;
+  --color-second: #F1F1F1;
+  --color-third: #FDFDFD;
+  --color-fourth: #5B6276;
+  --color-fifth: #010424;
+  --color-sixth: #01237D;
+  --color-seventh: #D7DCE7;
+  --color-eighth: rgba(1, 4, 36, 0.77); 
+
+ 
+  
+  
+  
+  //bacgrounds
+  --bg-main: #FFFFFF;
+  --bg-second: linear-gradient(217.93deg, #000C52 11.31%, #000051 60%);
+  --bg-third: linear-gradient(224.82deg, #030B41 0.85%, #000B52 57.3%, #1900AE 102.14%), #000C52;
+  --bg-fourth: #D7DCE7;
+
+}
+
+//container
+$container-max-width: 375px;
+$container-min-width: 1920px;

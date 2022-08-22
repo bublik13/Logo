@@ -1,0 +1,116 @@
+.about {
+  position: relative;
+}
+.about:before {
+  position: absolute;
+z-index: -2;
+  content: " ";
+  background: url(../img/about/background-2.png) center center/ cover no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 670px;
+}
+.about__container {
+  padding-top: 95px;
+  padding-bottom: 198px;
+}
+.about__title {
+  text-align: center;
+  margin-bottom: 17px;
+  position: relative;
+}
+.about__title::before {
+  position: absolute;
+  content: " ";
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%);
+  height: 40px;
+  width: 2px;
+  background: var(--bg-fourth);
+}
+.about__subtitle {
+  max-width: 591px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 109px;
+}
+.about__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 197px;
+  list-style: none;
+  position: relative;
+  padding-left: 84px;
+  padding-right: 89px;
+}
+.about__list::after {
+  position: absolute;
+  content: " ";
+  top: 108px;
+  left: 85px;
+  width: 82%;
+  z-index: -1;
+  height: 2px;
+  background: linear-gradient(to right, transparent 50%, #fff 50%),
+    linear-gradient(
+      to right,
+      #0963b8 0.85%,
+      #6200ae 18.26%,
+      #1900ae 33.03%,
+      #260091 67.85%,
+      #4731fc 91.59%,
+      #3221f1 100.03%,
+      #21c9f1 102.14%
+    );
+  background-size: 16px 2px, 100% 2px;
+}
+.about__item {
+  position: relative;
+}
+.about__item::after{
+  background: url(../img/about/background.png) no-repeat;
+  position: absolute;
+  content: " ";
+  top: -92px;
+  left: -83px;
+  right: 0;
+  bottom: 0;
+  width: 392px;
+  height: 387px;
+  z-index: -1;
+	transition: 1s;
+  opacity: 0;
+}
+.about__item:hover:after {
+  transition: 1s;
+  opacity: 1;
+}
+.about__card {
+  height: 100%;
+  padding: 32px 14px;
+  @include flex(flex, center, center, column, none);
+  background: linear-gradient(
+    224.82deg,
+    #010b4b 0.85%,
+    #1900ae 58.45%,
+    #4731fc 102.14%
+  );
+  border-radius: 6px;
+  cursor: url(../img/catalog/cursor.svg), pointer;
+}
+
+.about__icon {
+  width: 64px;
+  height: 64px;
+  display: block;
+  flex-shrink: 0;
+  margin-bottom: 15px;
+}
+.about__desc {
+  text-align: center;
+  @include font(20px, 26px, 400);
+  color: var(--color-third);
+  opacity: 0.9;
+  margin-top: auto;
+}

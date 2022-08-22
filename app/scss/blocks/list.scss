@@ -1,0 +1,29 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px 24px;
+  list-style: none;
+}
+.list__card {
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+  background: #ffffff;
+  box-shadow: 3px 3px 16px rgba(45, 65, 114, 0.1);
+  border-radius: 8px;
+  border-bottom: 4px solid transparent;
+  cursor: url(../img/catalog/cursor.svg), pointer;
+  &:hover {
+    box-shadow: 3px 3px 25px rgba(45, 65, 114, 0.2);
+    border-bottom: 4px solid #d7dce7;
+  }
+}
+.list__card::after {
+  position: absolute;
+  content: " ";
+  bottom: -5px;
+  width: 40px;
+  height: 4px;
+  background: #d7dce7;
+  right: 72px;
+}

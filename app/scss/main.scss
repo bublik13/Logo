@@ -1,0 +1,25 @@
+@import 'variables'; //пишем переменные
+@import 'reset'; //сборс стилей
+@import 'fonts'; //подключаем шрифты (локально)
+@import 'mixins'; //подключаем шрифты (локально)
+
+
+//подключаем БЭМ блоки
+@import 'blocks/container';
+@import 'blocks/header';
+@import 'blocks/catalog';
+@import 'blocks/contact';
+@import 'blocks/burger';
+@import 'blocks/nav';
+@import 'blocks/logo';
+@import 'blocks/btn';
+@import 'blocks/title';
+@import 'blocks/subtitle';
+@import 'blocks/list';
+@import 'blocks/card';
+@import 'blocks/swiper';
+@import 'blocks/map';
+@import 'blocks/about';
+@import 'blocks/input';
+@import 'blocks/form';
+@import 'blocks/footer.scss';

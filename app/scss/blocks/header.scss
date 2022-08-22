@@ -1,0 +1,63 @@
+.header {
+  position: relative;
+}
+.header::before {
+  background: url(../img/header/background.png) center center/ cover no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 632px;
+  content: " ";
+}
+.header__container {
+  padding-top: 20px;
+  z-index: 10;
+  position: relative;
+  @include flex(flex, space-between, center, none, none);
+}
+.header__nav {
+  margin: 0 auto;
+  position: static;
+  opacity: 1;
+  transform: none;
+  padding-top: 0;
+  pointer-events: auto;
+}
+
+.header__burger {
+  margin-left: auto;
+  z-index: 3;
+  position: absolute;
+  top: 19px;
+  right: 19px;
+  display: none;
+}
+.header__contianer-center {
+  z-index: 100;
+  position: relative;
+  padding-top: 95px;
+  padding-bottom: 186px;
+  margin: 0 auto;
+  text-align: center;
+}
+.header__title {
+  margin-bottom: 25px;
+}
+.header__subtitle {
+  margin-bottom: 118px;
+}
+.header__inputs {
+  @include flex(flex, center, none, none, none);
+}
+.header__input {
+  border-radius: 30px 0 0 30px;
+  padding: 13px 95px 13px 30px;
+  max-width: 780px;
+  margin-right: -87px;
+}
+.header__btn {
+  margin-right: -13px;
+  position: relative;
+  cursor: url(../img/map/cursor.svg), pointer;
+
+}
+

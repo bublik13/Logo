@@ -1,0 +1,23 @@
+.title {
+  @include font(36px, 46px, 450);
+  color: var(--color-third);
+  opacity: 0.77;
+}
+.title--color{
+  @include font(36px, 49px, 600);
+  color: var(--color-sixth);
+  opacity: 1;
+}
+.title--xs{
+  @include font(28px, 36px, 450);
+
+}
+.title--s{
+  @include font(38px, 49px, 500);
+
+}
+.title--color-second{
+  @include font(36px, 49px, 500);
+  color: var(--color-sixth);
+  opacity: 1;
+}

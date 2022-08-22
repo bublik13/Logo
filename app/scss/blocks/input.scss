@@ -1,0 +1,12 @@
+.input {
+  border: none;
+  white-space: nowrap;
+  background: var(--color-main);
+  @include font(16px, 21px, 400);
+  flex-grow: 1;
+  border: 1px solid #f1f1f1;
+  color: var(--color-fourth);
+}
+input:focus {
+  outline: none;
+}
