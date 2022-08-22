@@ -2,22 +2,32 @@
   @include font(36px, 46px, 450);
   color: var(--color-third);
   opacity: 0.77;
+  @include media($xs-s) {
+    @include font(20px, 26px, 450);
+  }
 }
-.title--color{
+.title--color {
   @include font(36px, 49px, 600);
   color: var(--color-sixth);
   opacity: 1;
+  @include media($xs-s) {
+    @include font(26px, 33px, 500);
+  }
 }
-.title--xs{
+.title--xs {
   @include font(28px, 36px, 450);
-
 }
-.title--s{
+.title--s {
   @include font(38px, 49px, 500);
-
+  @include media($xs-s) {
+    @include font(26px, 33px, 600);
+  }
 }
-.title--color-second{
+.title--color-second {
   @include font(36px, 49px, 500);
   color: var(--color-sixth);
   opacity: 1;
+  @include media($xs-s) {
+    @include font(26px, 33px, 600);
+  }
 }

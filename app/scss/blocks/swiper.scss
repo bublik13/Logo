@@ -1,22 +1,56 @@
-// .swiper {
-//     max-width: 1300px;
-//     height: auto;
-//   }
+.swiper {
+  @include media($xs) {
+    display: none;
+  }
+}
+.swiper-mobile {
+  display: none;
+
+  @include media($xs) {
+    display: block;
+    overflow: hidden;
+  }
+}
 .swiper-button-next,
 .swiper-button-prev {
+  z-index: 9 !important;
   top: unset !important;
   bottom: 0 !important;
-  width: 40px !important;
-  height: 40px !important;
+  width: 50px !important;
+  height: 50px !important;
   color: transparent !important;
+  @include media($xs) {
+    bottom: 33px !important;
+  }
+  @include media($x) {
+    bottom: 60px !important;
+  }
 }
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
   left: 33px !important;
   right: auto;
+  @include media($xs) {
+    left: 59px !important;
+  }
+  @include media($xs-s) {
+    left: 37px !important;
+  }
+  @include media($x) {
+    left: 23px !important;
+  }
 }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
   right: 0 !important;
   left: 114px !important;
+  @include media($xs) {
+    left: 132px !important;
+  }
+  @include media($xs-s) {
+    left: 112px !important;
+  }
+  @include media($x) {
+    left: 103px !important;
+  }
 }

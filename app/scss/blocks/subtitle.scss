@@ -1,17 +1,23 @@
 .subtitle {
-    @include font(28px, 36px, 400);
-    color: var(--color-third);
-    opacity: 0.77;
+  @include font(28px, 36px, 400);
+  color: var(--color-third);
+  opacity: 0.77;
+  @include media($xs-s) {
+    @include font(18px, 23px, 400);
   }
-  .subtitle--xs{
+}
+.subtitle--xs {
+  @include font(20px, 26px, 400);
+  color: var(--color-twelfth);
+}
+.subtitle--s {
+  @include font(26px, 33px, 400);
+  color: var(--color-twelfth);
+  @include media($xs-s) {
     @include font(20px, 26px, 400);
-    color: rgba(253, 253, 253, 0.8);
   }
-  .subtitle--s{
-    @include font(26px, 33px, 400);
-    color: rgba(253, 253, 253, 0.8);
-
-  }
-  .subtitle--color{
-    @include font(20px, 26px, 400);
-    color: #5B6276;  }
+}
+.subtitle--color {
+  @include font(20px, 26px, 400);
+  color: var(--color-fourth);
+}

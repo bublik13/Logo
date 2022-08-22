@@ -2,13 +2,7 @@
   position: relative;
 }
 .map::before {
-  background: linear-gradient(
-      224.82deg,
-      #030b41 0.85%,
-      #000b52 57.3%,
-      #1900ae 102.14%
-    ),
-    #000c52;
+  background: var(--bg-sixteenth);
   position: absolute;
   top: 0;
   left: 0;
@@ -21,6 +15,30 @@
   padding-top: 100px;
   padding-bottom: 58px;
   @include flex(flex, space-between, none, none, none);
+  @include media($lg) {
+    padding-right: 250px;
+  }
+  @include media($md) {
+    padding-right: 150px;
+  }
+  @include media($sm) {
+    padding-right: 100px;
+    padding-left: 174px;
+  }
+  @include media($xs) {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 65px;
+    min-height: 764px;
+  }
+  @include media($xs-s) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include media($x) {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
 }
 .map__container::after {
   position: absolute;
@@ -32,57 +50,97 @@
   background: url(../img/map/ru.png) center center/ cover no-repeat;
   z-index: 1;
   width: 1220px;
+  @include media($lg) {
+    left: 81px;
+  }
+  @include media($md) {
+    left: 0px;
+    background: url(../img/map/ru.png) left center/ cover no-repeat;
+  }
+  @include media($xs) {
+    background: url(../img/map/ru-mobile.png) center center/ cover no-repeat;
+    top: 0;
+    @include flex(flex, center, center, column-reverse, none);
+    width: auto;
+  }
+  @include media($xs-s) {
+    top: 172px;
+  }
 }
 .map__list {
   position: relative;
-  max-width: 771px;
+  width: 100%;
   min-height: 500px;
   flex-grow: 1;
+  @include media($xs) {
+    display: none;
+  }
 }
 .map__name {
   @include font(14px, 18px, 400);
-  color: rgba(215, 220, 231, 0.4);
-  transition: .5s;
-    cursor: url(../img/map/cursor.svg), pointer;
+  color: var(--color-eleventh);
+  transition: 0.5s;
+  cursor: url(../img/map/cursor.svg), pointer;
   @include flex(flex, center, center, none, none);
   position: absolute;
   z-index: 10;
   white-space: nowrap;
   &:hover {
-    transition: .5s;
-        @include font(16px, 21px, 450);
+    transition: 0.5s;
+    @include font(16px, 21px, 450);
     color: var(--color-seventh);
   }
 }
 .map__name-1 {
   left: 118px;
   top: 152px;
+  @include media($xs) {
+    left: 250px;
+  }
 }
 .map__name-2 {
   top: 205px;
   left: 79px;
+  @include media($xs) {
+    left: 200px;
+  }
 }
 .map__name-3 {
   bottom: 151px;
   left: 56px;
   flex-direction: column-reverse;
   align-items: flex-start;
+  @include media($xs) {
+    left: 170px;
+  }
 }
 .map__name-4 {
   left: 323px;
   top: 224px;
+  @include media($xs) {
+    left: 454px;
+  }
 }
 .map__name-5 {
   left: 236px;
   bottom: 163px;
+  @include media($xs) {
+    left: 354px;
+  }
 }
 .map__name-6 {
   left: 419px;
   bottom: 89px;
+  @include media($xs) {
+    left: 564px;
+  }
 }
 .map__name-7 {
   left: 593px;
   top: 168px;
+  @include media($xs) {
+    right: 266px;
+  }
 }
 .map__icon {
   width: 33px;
@@ -107,19 +165,23 @@
 .map__wrap {
   padding-top: 195px;
   position: relative;
-  z-index: 10;
+  z-index: 9;
+  @include media($xs) {
+    padding-top: 0px;
+  }
 }
 .map__title {
   position: relative;
+  margin-bottom: 30px;
 }
 .map__title::after {
   position: absolute;
   content: " ";
   left: 0;
-  bottom: -10px;
+  bottom: -38px;
   width: 40px;
   height: 2px;
-  background: rgba(164, 167, 226, 0.4);
+  background: var(--bg-fourteen);
   margin-bottom: 28px;
 }
 .map__subtitle {

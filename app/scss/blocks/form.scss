@@ -5,7 +5,7 @@
   background: url(../img/form/background.png) center center/ cover no-repeat;
   position: absolute;
   width: 100%;
-  height: 572px;
+  height: 100%;
   content: " ";
   z-index: -1;
 }
@@ -13,56 +13,111 @@
   padding-top: 119px;
   padding-bottom: 100px;
   padding-right: 367px;
+  @include media($lg) {
+    padding-right: 250px;
+  }
+  @include media($md) {
+    padding-right: 150px;
+  }
+  @include media($sm) {
+    padding-right: 100px;
+  }
+  @include media($xs) {
+    padding-right: 50px;
+    padding-top: 78px;
+    padding-bottom: 81px;
+  }
+  @include media($xs-s) {
+    padding-right: 30px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  @include media($x) {
+    padding-right: 15px;
+  }
 }
 .form__title {
   margin-bottom: 50px;
   position: relative;
   cursor: context-menu;
+  @include media($xs-s) {
+    padding: 0 30px;
+    margin-bottom: 43px;
+  }
 }
 
 .form__title::after {
   position: absolute;
   content: " ";
   left: 0;
-  bottom: -42px;
+  bottom: -39px;
   width: 40px;
   height: 2px;
-  background: rgba(164, 167, 226, 0.4);
+  background: var(--bg-fourteen);
   margin-bottom: 28px;
+  @include media($xs-s) {
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 .form__subtitle {
   max-width: 550px;
   margin-bottom: 91px;
   cursor: context-menu;
+  @include media($xs-s) {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 100%;
+  }
 }
 .form__row {
   @include flex(flex, space-between, center, none, none);
   margin-bottom: 22px;
+  @include media($xs-s) {
+    @include flex(flex, space-between, center, column, none);
+    margin-bottom: 4px;
+  }
 }
 .form__input {
   padding: 16px 13px 15px 40px;
-  background: #f4f4f4;
-  border: 1px solid #e8e8e8;
+  background: var(--color-eleventh);
+  border: 1px solid var(--bg-fifteenth);
   border-radius: 39px;
+  @include media($xs-s) {
+    width: 100%;
+    padding: 16px 13px 15px 13px;
+  }
 }
 .form__input:first-child {
   margin-right: 32px;
+  @include media($xs-s) {
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
 }
 .form__btn {
   margin-left: 28px;
   padding: 18px 19px 18px;
   cursor: url(../img/map/cursor.svg), pointer;
-
+  max-width: 159px;
+  @include media($xs-s) {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 21px;
+  }
 }
 .form__info {
   @include font(14px, 18px, 400);
-  color: rgba(253, 253, 253, 0.6);
+  color: var(--color-ninth);
   padding-left: 5px;
+  @include media($xs-s) {
+    @include font(13px, 17px, 400);
+  }
 }
 .form__info a {
   color: var(--color-main);
   text-decoration: underline;
   padding-bottom: 2px;
   cursor: url(../img/map/cursor.svg), pointer;
-
 }

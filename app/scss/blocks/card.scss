@@ -7,6 +7,9 @@
   display: block;
   height: 270px;
   object-fit: contain;
+  @include media($xs-s) {
+    height: auto;
+  }
 }
 .card__wrap {
   padding: 9px 16px 15px;
@@ -14,9 +17,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include media($xs-s) {
+    padding: 9px 8px 15px;
+  }
 }
 .card__name {
   text-align: center;
   color: var(--color-fourth);
   @include font(20px, 24px, 400);
+  @include media($xs-s) {
+    @include font(15px, 19px, 400);
+    margin-top: auto;
+  }
 }

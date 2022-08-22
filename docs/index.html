@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logo</title>
-    <link rel="stylesheet" href="css/main.css?t=1661173019600">
+    <link rel="stylesheet" href="css/main.css?t=1661196441946">
     <link href="http://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 
-<body>
+<body class="body js-body">
     <svg display="none">
         <symbol id="basket" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M56.7965 10.9808C56.6267 10.7823 56.3779 10.6681 56.1161 10.6681H13.7986L12.0731 4.88533C11.9589 4.50508 11.6098 4.245 11.2134 4.245H4.59532C4.09967 4.245 3.69849 4.64618 3.69849 5.14183C3.69849 5.63748 4.09967 6.03866 4.59532 6.03866H10.5449L21.4468 42.5721C21.448 42.5763 21.4516 42.5799 21.4528 42.5841L22.807 47.1902C21.9521 48.0398 21.4223 49.2159 21.4223 50.5127C21.4223 53.1015 23.5275 55.2079 26.1146 55.2079C28.6185 55.2079 30.6639 53.2301 30.7901 50.753H42.544C42.5434 50.7859 42.5392 50.8182 42.5392 50.8517C42.5392 53.4381 44.6432 55.5427 47.229 55.5427C49.8149 55.5427 51.9195 53.4381 51.9195 50.8517C51.9195 48.2652 49.8149 46.1606 47.229 46.1606C45.3164 46.1606 43.6704 47.3134 42.9416 48.9594H30.5342C30.3046 48.3047 29.9345 47.7026 29.4293 47.1974C28.5438 46.3119 27.3671 45.8234 26.1164 45.8234C26.1158 45.8234 26.1152 45.8234 26.1152 45.8234C25.4999 45.8234 24.9134 45.9454 24.3747 46.1618L23.5078 43.2124H51.4131C51.8561 43.2124 52.2328 42.889 52.2991 42.4513L57.0027 11.7001C57.0422 11.4418 56.9669 11.1793 56.7965 10.9808ZM47.229 47.9549C48.826 47.9549 50.1258 49.2547 50.1258 50.8523C50.1258 52.4498 48.826 53.7496 47.229 53.7496C45.6321 53.7496 44.3328 52.4498 44.3328 50.8523C44.3328 49.2547 45.6321 47.9549 47.229 47.9549ZM26.1152 47.6177H26.1158C26.8876 47.6177 27.6135 47.919 28.1599 48.4661C28.707 49.0132 29.0077 49.7408 29.0077 50.5139C29.0077 52.1138 27.7097 53.4154 26.114 53.4154C24.5158 53.4154 23.2154 52.1138 23.2154 50.5139C23.216 48.9169 24.5164 47.6177 26.1152 47.6177ZM50.6424 41.4194H22.9798L21.2842 35.6509C21.2627 35.578 21.2304 35.5116 21.1933 35.4488L14.3337 12.4618H55.0715L50.6424 41.4194Z" fill="white"/>
@@ -58,13 +58,10 @@
             <rect width="24" height="24" fill="white" transform="translate(0.460938 0.915039)"/>
             </clipPath>
             </defs>
-        </symbol>
-            
-               
-            
+        </symbol>  
     </svg> 
       
-    <img class="pp"  hidden   src="img/web.jpg" alt="">
+    <img class="pp"   hidden  src="img/mobile.jpg" alt="">
     <style>
       .pp {
         position: absolute;
@@ -82,7 +79,8 @@
             <nav class="nav header__nav js-nav">
                 <ul class="nav__list nav__list--column">
                     <li class="nav__item">
-                        <a href="#" class="nav__link">О компании
+                        <a href="#" class="nav__link">
+                            О компании
                         </a>
                     </li>
                     <li class="nav__item">
@@ -124,29 +122,44 @@
                     </a>
                 </li>
             </ul>
-            <button type="button" aria-label="close" class="burger header__burger js-burger">
-                <span class="burger__line"></span>
-                <span class="burger__line">меню</span>
-                <span class="burger__line"></span>
-            </button>
+            <div class="header__wrap">
+                <button type="button" aria-label="close" class="burger header__burger js-burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+                <div class="header__text">
+                    меню
+                </div>
+            </div>
         </div>
         <div class="header__contianer-center container">
-            <h1 class="header__title title">ПРОИЗВОДИТЕЛЬ ЭЛЕКТРОННЫХ КОМПОНЕНТОВ</h1>
-            <p class="header__subtitle subtitle">25 заводов поставщиков</p>
+            <h1 class="header__title title">
+                ПРОИЗВОДИТЕЛЬ ЭЛЕКТРОННЫХ КОМПОНЕНТОВ
+            </h1>
+            <p class="header__subtitle subtitle">
+                25 заводов поставщиков
+            </p>
             <form action="send.php" method="post" class="header__inputs">
                 <input type="text" name="email" placeholder="Поиск по каталогу" class="header__input input">
-                <button type="submit" class="header__btn btn">ПОИСК</button>
+                <button type="submit" class="header__btn btn">
+                    ПОИСК
+                </button>
             </form>
         </div>
     </header>
     <section class="catalog">
         <div class="catalog__container container">
-            <h2 class="catalog__title title title--color">КАТАЛОГ</h2>
+            <h2 class="catalog__title title title--color">
+                КАТАЛОГ
+            </h2>
             <a href="#" class="catalog__basket">
                 <svg aria-hidden="true" class="catalog__icon-basket">
                     <use xlink:href="#basket"></use>
                 </svg>    
-                <span class="catalog__number">123</span>
+                <span class="catalog__number">
+                    123
+                </span>
             </a>
             <div class="swiper">
                 <div class="swiper-wrapper">
@@ -550,6 +563,216 @@
                     <img class="catalog__icon" src="img/icons/arrow.svg" alt="arrow">
                 </div>
             </div>
+            <div class="swiper-mobile">
+                <div class="swiper-wrapper">
+                    <ul class="catalog__list-mobile list list__swiper-slide swiper-slide">
+                        <li class="list__item">
+                            <a href="#" class="list__card card">
+                                <div class="card__top">
+                                    <img src="img/catalog/product-1.png" alt="product" class="card__img" width="288" height="270">
+                                </div>     
+                                <div class="card__wrap">
+                                    <div class="card__name">
+                                        Активные компоненты
+                                    </div>
+                                </div>                        
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__card card">
+                                <div class="card__top">
+                                    <img src="img/catalog/product-2.png" alt="product" class="card__img" width="288" height="270">
+                                </div>     
+                                <div class="card__wrap">
+                                    <div class="card__name">
+                                        Пассивные компоненты
+                                    </div>
+                                </div>                        
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__card card">
+                                <div class="card__top">
+                                    <img src="img/catalog/product-3.png" alt="product" class="card__img" width="288" height="270">
+                                </div>     
+                                <div class="card__wrap">
+                                    <div class="card__name">
+                                        Светодиоды <br> и светодиодные  индикаторы
+                                    </div>
+                                </div>                        
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__card card">
+                                <div class="card__top">
+                                    <img src="img/catalog/product-4.png" alt="product" class="card__img" width="288" height="270">
+                                </div>     
+                                <div class="card__wrap">
+                                    <div class="card__name">
+                                        Установочные изделия
+                                    </div>
+                                </div>                        
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="catalog__list-mobile list list__swiper-slide swiper-slide">
+                        <li class="list__item">
+                            <a href="#" class="list__card card">
+                                <div class="card__top">
+                                    <img src="img/catalog/product-5.png" alt="product" class="card__img" width="288" height="270">
+                                </div>     
+                                <div class="card__wrap">
+                                    <div class="card__name">
+                                        Резонаторы и генераторы
+                                    </div>
+                                </div>                        
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__card card">
+                                <div class="card__top">
+                                    <img src="img/catalog/product-6.png" alt="product" class="card__img" width="288" height="270">
+                                </div>     
+                                <div class="card__wrap">
+                                    <div class="card__name">
+                                        Акустические компоненты
+                                    </div>
+                                </div>                        
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__card card">
+                                <div class="card__top">
+                                    <img src="img/catalog/product-7.png" alt="product" class="card__img" width="288" height="270">
+                                </div>     
+                                <div class="card__wrap">
+                                    <div class="card__name">
+                                        Реле
+                                    </div>
+                                </div>                        
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__card card">
+                                <div class="card__top">
+                                    <img src="img/catalog/product-8.png" alt="product" class="card__img" width="288" height="270">
+                                </div>     
+                                <div class="card__wrap">
+                                    <div class="card__name">
+                                        Кабели и аксесуары
+                                    </div>
+                                </div>                        
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="catalog__list-mobile list list__swiper-slide swiper-slide">
+                        <li class="list__item">
+                            <a href="#" class="list__card card">
+                                <div class="card__top">
+                                    <img src="img/catalog/product-1.png" alt="product" class="card__img" width="288" height="270">
+                                </div>     
+                                <div class="card__wrap">
+                                    <div class="card__name">
+                                        Активные компоненты
+                                    </div>
+                                </div>                        
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__card card">
+                                <div class="card__top">
+                                    <img src="img/catalog/product-2.png" alt="product" class="card__img" width="288" height="270">
+                                </div>     
+                                <div class="card__wrap">
+                                    <div class="card__name">
+                                        Пассивные компоненты
+                                    </div>
+                                </div>                        
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__card card">
+                                <div class="card__top">
+                                    <img src="img/catalog/product-3.png" alt="product" class="card__img" width="288" height="270">
+                                </div>     
+                                <div class="card__wrap">
+                                    <div class="card__name">
+                                        Светодиоды <br> и светодиодные  индикаторы
+                                    </div>
+                                </div>                        
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__card card">
+                                <div class="card__top">
+                                    <img src="img/catalog/product-4.png" alt="product" class="card__img" width="288" height="270">
+                                </div>     
+                                <div class="card__wrap">
+                                    <div class="card__name">
+                                        Установочные изделия
+                                    </div>
+                                </div>                        
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="catalog__list-mobile list list__swiper-slide swiper-slide">
+                        <li class="list__item">
+                            <a href="#" class="list__card card">
+                                <div class="card__top">
+                                    <img src="img/catalog/product-5.png" alt="product" class="card__img" width="288" height="270">
+                                </div>     
+                                <div class="card__wrap">
+                                    <div class="card__name">
+                                        Резонаторы и генераторы
+                                    </div>
+                                </div>                        
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__card card">
+                                <div class="card__top">
+                                    <img src="img/catalog/product-6.png" alt="product" class="card__img" width="288" height="270">
+                                </div>     
+                                <div class="card__wrap">
+                                    <div class="card__name">
+                                        Акустические компоненты
+                                    </div>
+                                </div>                        
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__card card">
+                                <div class="card__top">
+                                    <img src="img/catalog/product-7.png" alt="product" class="card__img" width="288" height="270">
+                                </div>     
+                                <div class="card__wrap">
+                                    <div class="card__name">
+                                        Реле
+                                    </div>
+                                </div>                        
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__card card">
+                                <div class="card__top">
+                                    <img src="img/catalog/product-8.png" alt="product" class="card__img" width="288" height="270">
+                                </div>     
+                                <div class="card__wrap">
+                                    <div class="card__name">
+                                        Кабели и аксесуары
+                                    </div>
+                                </div>                        
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-button-prev">
+                    <img class="catalog__icon catalog__icon--lf" src="img/icons/arrow.svg" alt="arrow">
+                </div>
+                <div class="swiper-button-next">
+                    <img class="catalog__icon" src="img/icons/arrow.svg" alt="arrow">
+                </div>
+            </div>
         </div>
     </section>
     <section class="map">
@@ -600,22 +823,31 @@
                 </li>
             </ul>
             <div class="map__wrap">
-                <h3 class="map__title title title--xs">География поставок</h3>
-                <p class="map__subtitle subtitle subtitle--xs">Мы работаем только с надежными транспортными компаниями и организуем доставку в любой регион России или за рубеж </p>
+                <h3 class="map__title title title--xs">
+                    География поставок
+                </h3>
+                <p class="map__subtitle subtitle subtitle--xs">
+                    Мы работаем только с надежными транспортными компаниями и организуем доставку в любой регион России или за рубеж 
+                </p>
             </div>
         </div>
     </section>
     <section class="about">
         <div class="about__container container">
-            <h4 class="about__title title title--color-second">О КОМПАНИИ</h4>
-            <p class="about__subtitle subtitle  subtitle--color">С 1996 года мы занимаемся оптовыми поставками электронных компонентов от ведущих заводов изготовителей из Европы и Азии для Российских производителей.</p>
+            <h4 class="about__title title title--color-second">
+                О КОМПАНИИ
+            </h4>
+            <p class="about__subtitle subtitle  subtitle--color">
+                С 1996 года мы занимаемся оптовыми поставками электронных компонентов от ведущих заводов изготовителей из Европы и Азии для Российских производителей.
+            </p>
             <ul class="about__list">
                 <li class="about__item">
                     <a href="#" class="about__card">
                         <svg aria-hidden="true" class="about__icon">
                             <use xlink:href="#house"></use>
                         </svg>   
-                        <p class="about__desc">Изделия в наличии, 
+                        <p class="about__desc">
+                            Изделия в наличии, 
                             на складе СПБ и Мск
                         </p>
                     </a>
@@ -625,7 +857,8 @@
                         <svg aria-hidden="true" class="about__icon">
                             <use xlink:href="#car"></use>
                         </svg>   
-                        <p class="about__desc">Комплексные поставки,
+                        <p class="about__desc">
+                            Комплексные поставки,
                             предлагаем аналоги
                         </p>
                     </a>
@@ -645,14 +878,22 @@
     </section>
     <section class="form">
         <div class="form__container container">
-            <h5 class="form__title title title--s">ЗАКАЖИТЕ ОБРАТНЫЙ ЗВОНОК</h5>
-            <p class="form__subtitle subtitle subtitle--s">Более 150 крупнейших компаний уже доверили нам комплектацию. Давайте работать вместе!</p>
+            <h5 class="form__title title title--s">
+                ЗАКАЖИТЕ ОБРАТНЫЙ ЗВОНОК
+            </h5>
+            <p class="form__subtitle subtitle subtitle--s">
+                Более 150 крупнейших компаний уже доверили нам комплектацию. Давайте работать вместе!
+            </p>
             <div class="form__row">
                 <input placeholder="Имя" type="text" class="form__input input">
                 <input placeholder="Телефон" type="tel" class="form__input input">
-                <a class="form__btn btn" href="#">ОТПРАВИТЬ</a>
+                <a class="form__btn btn" href="#">
+                    ОТПРАВИТЬ
+                </a>
             </div>
-            <p class="form__info">Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a>  и соглашаетесь с условиями <a href="#">пользовательского соглашения</a> </p>
+            <p class="form__info">
+                Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a>  и соглашаетесь с условиями <a href="#">пользовательского соглашения</a> 
+            </p>
         </div>
     </section>
     <footer class="footer">
@@ -667,7 +908,9 @@
                             <svg aria-hidden="true" class="contact__icon">
                                 <use xlink:href="#marker"></use>
                             </svg>                                
-                            <div class="contact__name">Санкт-Петербург, ул. Тестовая д. 0 офис 0</div>
+                            <div class="contact__name">
+                                Санкт-Петербург, ул. Тестовая д. 0 офис 0
+                            </div>
                         </a>
                     </li>
                     <li class="contact__item">
@@ -687,7 +930,9 @@
                             <svg aria-hidden="true" class="contact__icon">
                                 <use xlink:href="#marker"></use>
                             </svg>                                
-                            <div class="contact__name">Москва, ул. Тестовая д. 0 стр. 0</div>
+                            <div class="contact__name">
+                                Москва, ул. Тестовая д. 0 стр. 0
+                            </div>
                         </a>
                     </li>
                     <li class="contact__item">
@@ -703,37 +948,46 @@
                 </ul>
             </div>
             <div class="footer__menu">
-                <div class="footer__title">Меню</div>
+                <div class="footer__title">
+                    Меню
+                </div>
                 <div class="footer__menu-wrap">
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Главная
+                            <a href="#" class="footer__link"> 
+                                Главная
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> О компании
+                            <a href="#" class="footer__link"> 
+                                О компании
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Каталог производителя
+                            <a href="#" class="footer__link"> 
+                                Каталог производителя
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Сертификаты
+                            <a href="#" class="footer__link"> 
+                                Сертификаты
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Контакты
+                            <a href="#" class="footer__link"> 
+                                Контакты
                             </a>
                         </li>
                     </ul>
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a href="#" class="footer__link footer__link--udreline"> Карта сайта
+                            <a href="#" class="footer__link footer__link--udreline"> 
+                                Карта сайта
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link footer__link--udreline"> Политика конфиденциальности
+                            <a href="#" class="footer__link footer__link--udreline"> 
+                                Политика конфиденциальности
                             </a>
                         </li>
                     </ul>
@@ -741,77 +995,96 @@
 
             </div>
             <div class="footer__catalog">
-                <div class="footer__title">Каталог</div>
+                <div class="footer__title">
+                    Каталог
+                </div>
                 <div class="footer__catalog-wrap">
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Активные компоненты 
+                            <a href="#" class="footer__link">
+                                Активные компоненты 
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Пассивные компоненты
+                            <a href="#" class="footer__link">
+                                Пассивные компоненты
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Светодиоды и светодиодные индикаторы
+                            <a href="#" class="footer__link"> 
+                                Светодиоды и светодиодные индикаторы
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Установочные изделия
+                            <a href="#" class="footer__link"> 
+                                Установочные изделия
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Резонаторы и генераторы компоненты
+                            <a href="#" class="footer__link"> 
+                                Резонаторы и генераторы компоненты
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Акустические компоненты
+                            <a href="#" class="footer__link"> 
+                                Акустические компоненты
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Реле
+                            <a href="#" class="footer__link"> 
+                                Реле
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Вентиляторы и аксессуары
+                            <a href="#" class="footer__link"> 
+                                Вентиляторы и аксессуары
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Кабели, провода, аксессуары
+                            <a href="#" class="footer__link"> 
+                                Кабели, провода, аксессуары
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Оборудование и материалы для пайки
+                            <a href="#" class="footer__link"> 
+                                Оборудование и материалы для пайки
                             </a>
                         </li>
                     </ul>
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Элементы питания и аксессуары
+                            <a href="#" class="footer__link"> 
+                                Элементы питания и аксессуары
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Дисплеи жидкокристаллические
+                            <a href="#" class="footer__link"> 
+                                Дисплеи жидкокристаллические
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Электродвигатели
+                            <a href="#" class="footer__link"> 
+                                Электродвигатели
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Антенны
+                            <a href="#" class="footer__link"> 
+                                Антенны
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Готовые изделия
+                            <a href="#" class="footer__link"> 
+                                Готовые изделия
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Разрядники
+                            <a href="#" class="footer__link"> 
+                                Разрядники
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link"> Датчики
+                            <a href="#" class="footer__link"> 
+                                Датчики
                             </a>
                         </li>
                     </ul>
@@ -822,7 +1095,7 @@
     </footer>
     <!-- подключаем js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/main.js?t=1661173019600"></script>
+    <script src="js/main.js?t=1661196441946"></script>
 </body>
 
 </html>

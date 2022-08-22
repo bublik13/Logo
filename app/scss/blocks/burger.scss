@@ -1,7 +1,36 @@
 .burger {
-  width: 25px;
-  height: 25px;
+  width: 32px;
+  height: 23px;
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  position: relative;
+  margin-right: 4px;
+}
+.burger__line {
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  background: var(--bg-seventh);
+  top: 50%;
+  margin-top: -1px;
+  left: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.burger__line:first-child {
+  transform: translateY(-8px);
+}
+.burger__line:last-child {
+  transform: translateY(8px);
+  width: 18px;
+}
+.burger--active .burger__line:first-child {
+  transform: translateY(0) rotate(45deg);
+}
+.burger--active .burger__line:nth-child(2) {
+  opacity: 0;
+}
+.burger--active .burger__line:last-child {
+  transform: translateY(0) rotate(-45deg);
+  width: 32px;
 }

@@ -1,17 +1,33 @@
 .container {
-    min-width: $container-max-width;
-    max-width: $container-min-width;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 348px;
-    padding-right: 348px;
-    width: 100%;
-    // @include media($lm) {
-    //   padding-left: 50px;
-    //   padding-right: 50px;
-    // }
-    // @include media($xs) {
-    //   padding-left: 16px;
-    //   padding-right: 16px;
-    // }
+  min-width: $container-max-width;
+  max-width: $container-min-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 348px;
+  padding-right: 348px;
+  width: 100%;
+  @include media($lg) {
+    padding-left: 250px;
+    padding-right: 250px;
   }
+  @include media($md) {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  @include media($sm) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  @include media($xs) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @include media($xs-s) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include media($x) {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+}

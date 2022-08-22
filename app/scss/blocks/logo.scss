@@ -1,4 +1,8 @@
 .logo {
   @include font(46px, 59px, 700);
   color: var(--color-main);
+  cursor: url(../img/map/cursor.svg), pointer;
+  @include media($xs-s) {
+    @include font(32px, 41px, 700) ;
+  }
 }

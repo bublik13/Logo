@@ -3,12 +3,7 @@
   list-style: none;
 }
 .contact__phone {
-  background: linear-gradient(
-    101.49deg,
-    #a5a8f5 17.34%,
-    #b8baf5 53.55%,
-    #9296f7 86.43%
-  );
+  background: var(--bg-seventh);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -24,11 +19,15 @@
   margin-bottom: 11px;
   @include font(14px, 18px, 300);
   color: rgba(241, 241, 241, 0.8);
+  cursor: url(../img/map/cursor.svg), pointer;
+  @include media($xs-s) {
+    @include font(16px, 18px, 400);
+    max-width: 286px;
+  }
 }
 .contact__name {
   padding-top: 5px;
 }
-
 .contact__icon {
   margin-right: 8px;
   display: block;
@@ -36,17 +35,25 @@
   width: 24px;
   height: 24px;
   color: rgba(241, 241, 241, 0.8);
-  &:hover {
-    color: #1e88e5;
-    opacity: 1;
+  @include media($xs-s) {
+    width: 16px;
+    height: 16px;
   }
 }
-.contact__item > .contact__phone {
+.footer__contact > .contact__item > .contact__phone {
   margin-left: 32px;
   @include font(16px, 21px, 500);
   margin-bottom: 5px;
   display: block;
+  cursor: url(../img/map/cursor.svg), pointer;
+  @include media($xs-s) {
+    margin-left: 22px;
+  }
 }
-.contact__item > .contact__email {
+.footer__contact > .contact__item > .contact__email {
   margin-left: 32px;
+  cursor: url(../img/map/cursor.svg), pointer;
+  @include media($xs-s) {
+    margin-left: 22px;
+  }
 }
